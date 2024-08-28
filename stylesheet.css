@@ -1,0 +1,86 @@
+body {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.container {
+  /* backgroun image = เอาลิ้งข้างนอกมาแปะเพื่อเป็น background */
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 1),
+      rgba(212, 28, 28, 0)
+    ),
+    url("https://images.unsplash.com/photo-1724266156926-9baa490ce408?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom right;
+  min-height: 100vh;
+  /*min-height = กำหนดความสูงของขนาดจอ(อย่างน้อย ๆ ) */
+  padding: 128px;
+  /*offset backgroud ระยะเว้น เข้ามา */
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 48px;
+  }
+}
+
+.content {
+  max-width: 500px;
+}
+
+.avatar {
+  width: 210px;
+  height: 210px;
+  margin-bottom: 40px;
+  /*margin กับ padding จะคล้าย ๆ กัน คือระยะห่าง */
+  /*ทำให้ขอบมน border-radius */
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 10px 10px 0px 0px black;
+
+  /* แนวขวางเลื่อนเท่าไหร่ / แนวตั้งเลื่อนเท่าไหร่ / blur ไหม / ขยายออกมาเท่าไหร่ / สี */
+}
+
+.about {
+  font-size: 18px;
+  font-weight: 300;
+  color: grey;
+  margin-bottom: 20px;
+}
+
+.job {
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.name {
+  font-size: 48px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.contact {
+  margin-bottom: 40px;
+}
+
+.button {
+  background-color: black;
+  color: white;
+  padding: 12px 12px 12px 12px;
+  border-radius: 5%;
+  text-decoration: none;
+}
+
+.contact-icon {
+  margin-right: 12px;
+  width: 16px;
+}
+
+.contact-item {
+  margin-bottom: 4px;
+}
